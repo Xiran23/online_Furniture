@@ -1,0 +1,86 @@
+nav {
+    background-color: #fcf6d5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .menu ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .menu ul li:hover > ul {
+    display: block;
+  }
+  
+  .menu ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu ul ul li {
+    margin: 0;
+  }
+  
+  .menu ul ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .cart-search input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  
+  .cart-search img {
+    height: 30px;
+  }
+  
+  .cart-count {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  
+  /* Add highlight to selected nav item */
+  .nav-item.active > a {
+    background-color: #333;
+    color: #fff;
+  }
+  
