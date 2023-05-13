@@ -46,6 +46,8 @@
                     </ul>
                     </li>
 
+                    <li class="nav-items"><a href="login.php">Sign in</a></li>
+
                 
 
 
@@ -59,18 +61,19 @@
     <!-- for right side of navbar  -->
 
     <div class="cart-search">
-        <a href="#"><img src="cart.png" alt="cart icon"></a>
-        <span class="cart-count">0</span>
+      <a href="#"><img src="cart.png" alt="cart icon" ></a>
+      <span class="cart-count">0</span>
         <input type="text" placeholder="Search">
     </div>
 
 
     </nav>
 
+    <!-- auto slider -->
 
-    <div style="width:90%;background: #32353b;height: 400px;margin: 10px;display: flex;box-shadow: 2px 2px 8px black; margin: auto; margin-top:10px ;" class="img_slider">
+    <div style="width:90%;background: #32353b; height: 850px; margin: 10px;display: flex;box-shadow: 2px 2px 8px black; margin: auto; margin-top:10px ;" class="img_slider">
         <!-- <img src="slider/leftt.png" alt="" class="ar1" style="transform: rotate(180deg);"> -->
-        <img src="photoes/photos1.jpg" style="width: 100%;" alt="image not found" id="slider">
+        <img src="images/photos1.jpg" style="width: 100%;" alt="image not found" id="slider">
         <!-- <img src="slider/leftt.png" alt="" class="ar2" style="transform: rotate(180deg);"> -->
     </div>
     
@@ -79,7 +82,7 @@
 <div style="display: flex;  justify-content: space-between; margin: auto; width:90%;">
 
   <div style="border: 1px solid #ccc; padding: 10px; width: 150px;">
-    <a href="product-page.html"><img src="photoes/img1.jpg" alt="Product Name" style="width: 100%;"></a>
+    <a href="product-page.html"><img src="images/img1.jpg" alt="Product Name" style="width: 100%;"></a>
     <h3 style="font-size: 18px; font-weight: bold;">Chair</h3>
     <p style="font-size: 16px;">Product Description</p>
     <p style="font-size: 16px; color: green; font-weight: bold;">.99</p>
@@ -88,7 +91,7 @@
   
   
   <div style="border: 1px solid #ccc; padding: 10px; width: 150px;">
-    <a href="product-page.html"><img src="photoes/img1.jpg" alt="Product Name" style="width: 100%;"></a>
+    <a href="product-page.html"><img src="images/img1.jpg" alt="Product Name" style="width: 100%;"></a>
     <h3 style="font-size: 18px; font-weight: bold;">Chair</h3>
     <p style="font-size: 16px;">Product Description</p>
     <p style="font-size: 16px; color: green; font-weight: bold;">.99</p>
@@ -96,7 +99,7 @@
   </div>
 
   <div style="border: 1px solid #ccc; padding: 10px; width: 150px;">
-    <a href="product-page.html"><img src="photoes/img1.jpg" alt="Product Name" style="width: 100%;"></a>
+    <a href="product-page.html"><img src="images/img1.jpg" alt="Product Name" style="width: 100%;"></a>
     <h3 style="font-size: 18px; font-weight: bold;">Chair</h3>
     <p style="font-size: 16px;">Product Description</p>
     <p style="font-size: 16px; color: green; font-weight: bold;">.99</p>
@@ -104,7 +107,7 @@
   </div>
 
   <div style="border: 1px solid #ccc; padding: 10px; width: 150px;">
-    <a href="product-page.html"><img src="photoes/img1.jpg" alt="Product Name" style="width: 100%;"></a>
+    <a href="product-page.html"><img src="images/img1.jpg" alt="Product Name" style="width: 100%;"></a>
     <h3 style="font-size: 18px; font-weight: bold;">Chair</h3>
     <p style="font-size: 16px;">Product Description</p>
     <p style="font-size: 16px; color: green; font-weight: bold;">.99</p>
@@ -170,7 +173,7 @@ cart.forEach((i) => {
 
 
 var imgId = document.getElementById('slider');
-var imgList = ['../photoes/photos1.jpg', '../photoes/photoes2.jpg', '../photoes/photoes3.jpg'];
+var imgList = ['../images/photos1.jpg', '../images/photoes2.jpg', '../images/photoes3.jpg'];
 let imgNo = 0;
 
 let carouseId = setInterval(sliderOne, 1000);
