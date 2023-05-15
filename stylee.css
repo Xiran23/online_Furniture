@@ -90,9 +90,9 @@ label #side-nav_btn:hover{
     color: #19b3e3;
 }
 
-#check:checked ~ .side-nav{
+/* #check:checked ~ .side-nav{
     left: -190px;
-}
+} */
 #check:checked ~ .side-nav a span{
     display:none ;
     
@@ -107,10 +107,14 @@ label #side-nav_btn:hover{
 }
 .right-div{
     margin-left: 250px;
-    /* background-image: url(images/photoes3.jpg);
+    background-image: url(images/photoes3.jpg);
     background-repeat: no-repeat ;
-    background-size: cover; */
+    background-size: cover;
     height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+    position: fixed;
+    background-color: aqua;
     transition: 0.5s;
 }
 
