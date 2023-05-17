@@ -58,6 +58,7 @@
                 <th>description</th>
                 <th>price</th>
                 <th>img</th>
+                <th colspan="2">Action</th>
 
             </tr>
             <?php  foreach($products as $prod):?>
@@ -67,7 +68,7 @@
                 <td><?php echo $prod['pdescription']; ?></td>
                 <td><?php echo $prod['price']; ?></td>
                 <td> <img src="<?php echo $prod['image']; ?>" style="width:200px; height:100px"> </td>
-            <td> <button>EDIT</button></td>
+            <td> <button>Delete</button></td>
             <td> <button>update</button></td>
             </tr>
             <?php endforeach; ?>
