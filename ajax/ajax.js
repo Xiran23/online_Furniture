@@ -1,30 +1,46 @@
-function showCustomers(){
-    console.log("this is show cutomer fucntion");
-    const xhr = new XMLHttpRequest();
 
-    xhr.open('POST','./adminview/addproduct.php',true);
-    xhr.onreadystatechange = function(){
-        console.log('ready state is ', this.readyState);
 
+  function addProduct(){
+    console.log("Is pressed");
+      var xhr = new XMLHttpRequest();
+      
+      xhr.open('POST','./adminview/addproduct.php',true);
+      xhr.onreadystatechange = function() {
+        console.log("THIS IS AND READY STATE");
+       
+      }
+      xhr.onload=function(){
+        var response = xhr.responseText;
+        // Process the response as needed
+        console.log(response);
+        // Update the view product section with the received data
+        document.querySelector('.Section').innerHTML = response;
+  
+      }
+      xhr.send();
     }
 
-    //what to do when progress is ready 
-    xhr.onload = function(){
-        if(this.status === 200){
-
-            console.log(this.responseText);
-        } 
-        else {
-            console.log("some error has occured");
+    function Viewproduct(){
+      console.log("Is pressed");
+        var xhr = new XMLHttpRequest();
+        
+        xhr.open('POST','./adminview/view.php',true);
+        xhr.onreadystatechange = function() {
+          console.log("THIS IS AND READY STATE");
+         
         }
- 
+        xhr.onload=function(){
+          var response = xhr.responseText;
+          // Process the response as needed
+          console.log(response);
+          // Update the view product section with the received data
+          document.querySelector('.Section').innerHTML = response;
     
-}
-//send the request 
-
-xhr.send();
-   
-    }
-
+        }
+        xhr.send();
+      }
+    
+  
 
 
+ 

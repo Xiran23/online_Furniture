@@ -1,5 +1,5 @@
 
-        <form action=" <?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
+        <form action=" " method="POST" enctype="multipart/form-data">
 
             <h1>ADD A NEW PRODUCT</h1>
 
@@ -25,20 +25,20 @@
         </form>
 
         <?php 
-include('config/db.php');
+include('../config/db.php');
 
 //for images
 // print_r)
 
-$_filename = $_FILES['uploadedimg']['name'];
-$tempname  = $_FILES['uploadedimg']['tmp_name'];
 
 
 if(isset($_POST['submit'])){
+    $_filename = $_FILES['uploadedimg']['name'];
+    $tempname  = $_FILES['uploadedimg']['tmp_name'];
     $pname = $_POST['pname'];
     $pdescription = $_POST['pdescription'];
     $price       = $_POST['price'];
-    $folder     = 'product/'.$_filename; 
+    $folder     = '../product/'.$_filename; 
     move_uploaded_file($tempname,$folder);
     
     

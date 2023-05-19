@@ -21,7 +21,11 @@
         
 
 
-  <h1>HWt</h1>
+
+  <div class="Section">
+  
+  <!-- The product list will be populated here through Ajax -->
+</div>
 
     </div>
 
