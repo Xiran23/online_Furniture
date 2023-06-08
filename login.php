@@ -20,7 +20,7 @@ if (isset($_POST['submit']))
   
   
   if ($user) {
-    if ($password == $user['PASSWORD']) {
+    if ($password == $user['password']) {
       //getting user role 
       $role = $user['role'];
       if ($role == 1) {
