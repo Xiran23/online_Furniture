@@ -62,19 +62,42 @@ if (isset($_POST['submit']))
 
 
   <div class="align">
-    <nav class="navbar">
-      <ul class="nav-list">
-        <div class="logo">
-          <img src="images/mountain.png" alt="" />
-        </div>
-      </ul>
+  <nav>
+            <!-- for left side of page navbar  -->
 
-      <div class="right-part-nav">
-        <button class="btn"><a href="register.php"> sign up</a> </button>
+            <!-- for middle side of page navbar  -->
 
-        <button class="btn">About us</button>
-      </div>
-    </nav>
+            <div class="menu">
+                <ul>
+                    <li class="nav-items"><a href="#">Home</a></li>
+
+                    <li class="nav-items dropdown">
+                        <a href="#">About us </a>
+                        <ul>
+                            <li><a href="#">OUR TEMS</a></li>
+                            <li><a href="#">OUR TEMS</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- <li class="nav-items"><a href="login.php">Sign in</a></li> -->
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="#"> <img src="images/logos.png" width="200px"> </a>
+            </div>
+
+            <div class="menu">
+                <ul>
+
+                    <li class="nav-items"><a href="registerr.php">sign up</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </nav>
+  
 
     <section class="first">
       <div class="main">
@@ -84,27 +107,29 @@ if (isset($_POST['submit']))
 
         <div class="main-right">
 
+<div id="forms">
 
-          <form method="POST" >
-            <h2>LOGIN</h2>
-            <div class="input-group">
-              <label for="username">User_Id:</label>
-              <input type="text" id="username" name="username" required placeholder="Username" />
-              <!-- if username is wrong  -->
-              <span><?php echo $invaliduser; ?></span>
-              <span class="p-viewer">
-                <i class="fa fa-eye" aria-hidden="true"></i>
-              </span>
-            </div>
-            <div class="input-group">
-              <label for="password">User_Password:</label>
-              <input type="password" id="password" name="password" required placeholder="Password" />
-              <span><?php echo  $invalidpassword; ?></span>
-            </div>
-            <div class="input-group">
-              <input type="submit" name="submit" class="submit" value="login">
-            </div>
-          </form>
+  <form method="POST" >
+    <h2>LOGIN</h2>
+    <div class="form-group">
+      <label for="username">User_Id:</label>
+      <input type="text" id="username" name="username" required placeholder="Username" />
+      <!-- if username is wrong  -->
+      <span><?php echo $invaliduser; ?></span>
+      <span class="p-viewer">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+      </span>
+    </div>
+    <div class="form-group">
+      <label for="password">User_Password:</label>
+      <input type="password" id="password" name="password" required placeholder="Password" />
+      <span><?php echo  $invalidpassword; ?></span>
+    </div>
+    <div class="form-group">
+      <input type="submit" name="submit" class="submit" value="login">
+    </div>
+  </form>
+</div>
 
 
 
