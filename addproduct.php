@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="dashboardcss.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
    
 
@@ -26,30 +26,35 @@
 
 
   <div class="Section">
-  <form method="POST" enctype="multipart/form-data">
+    
+  <div id="forms">
 
-<h1>ADD A NEW PRODUCTs</h1>
-
-<div>
-    <label for="">Product-Name</label>
-    <input type="text" id="" class="" name="pname">
-</div>
-<div>
-    <label for="">Description</label>
-    <input type="text" id="" class="" name="pdescription">
-</div>
-<div>
-    <label for="">Price</label>
-    <input type="text" id="" class="" name="price">
-</div>
-<div>
-    <label for="">Product-img</label>
-    <input type="file"  id="" class="" name="uploadedimg">
-</div>
-
-<input type="submit" class="submit" name="submit" value="submit">
-
-</form>
+        <form method="POST" enctype="multipart/form-data">
+            
+            <h1>ADD A NEW PRODUCT</h1>
+            <hr>
+            
+            <div class="form_group">
+                <label for="">Product-Name</label>
+                <input type="text" id="" class="" name="pname">
+            </div>
+            <div>
+                <label for=""  class="form_group">Description</label>
+                <input type="text" id="" class="" name="pdescription">
+            </div>
+            <div>
+                <label for=""  class="form_group">Price</label>
+                <input type="text" id="" class="" name="price">
+            </div>
+            <div>
+                <label for="" class="form_group">  Product-img</label>
+                <input type="file"  id="" class="" name="uploadedimg">
+            </div>
+            
+            <input type="submit" class="submit" name="submit" value="submit">
+            
+        </form>
+    </div>
   
 
 </div>
