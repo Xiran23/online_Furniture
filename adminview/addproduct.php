@@ -1,5 +1,5 @@
 
-        <form action=" " method="POST" enctype="multipart/form-data">
+        <form  onsubmit="Viewproduct();" method="POST" enctype="multipart/form-data">
 
             <h1>ADD A NEW PRODUCT</h1>
 
@@ -46,7 +46,8 @@ if(isset($_POST['submit'])){
   
     $data = mysqli_query($conn,$query);
     if($data){
-        echo "<script> alert`product added succesfull`;</script>";
+        // echo "<script> alert`product added succesfull`;</script>";
+        echo "<script> Viewproduct();</script>";
     }
    
     

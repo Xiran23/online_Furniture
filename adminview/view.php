@@ -7,7 +7,7 @@
         $result = mysqli_query($conn,$query); 
         $products = mysqli_fetch_all($result,MYSQLI_ASSOC);
         mysqli_free_result($result);
-        mysqli_close($conn);
+        // mysqli_close($conn);
          
 
         // print_r($products);
@@ -32,16 +32,37 @@
                 <td><?php echo $prod['pdescription']; ?></td>
                 <td><?php echo $prod['price']; ?></td>
                 <td> <img src="<?php echo $prod['image']; ?>" style="width:200px; height:100px"> </td>
-            <td> <button>Delete</button></td>
-            <td> <button>update</button></td>
+                <form action="" method="post">
+                    <input type="hidden" name="delete_id" value="<?php echo $prod['product_id'];?>">
+
+                    <td> <input type="submit" value="delete" name="delete"></td>
+                    <!-- <td> <button>update</button></td> -->
+                </form>
             </tr>
             <?php endforeach; ?>
-
+            
         </table>
-        <div>
+        
 
 
 
     </div>
 
+
+
+
+ <?php 
+    if(isset($_POST['delete'])){
+       
+    $delete_id = $_POST['delete_id'];
+    // echo $delete_id;
+   $query = "DELETE FROM product WHERE product_id = {$delete_id}";
+   $result = mysqli_query($conn,$query); 
+   
+
+   
+
+   
+}
+?>
 

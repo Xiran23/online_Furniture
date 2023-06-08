@@ -70,7 +70,7 @@ if (isset($_POST['submit']))
       </ul>
 
       <div class="right-part-nav">
-        <button class="btn">Sign up</button>
+        <button class="btn"><a href="register.php"> sign up</a> </button>
 
         <button class="btn">About us</button>
       </div>
