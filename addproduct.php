@@ -52,7 +52,14 @@
             </div>
             
             <input type="submit" class="submit" name="submit" value="submit">
+            <br>
+
+       
             
+           <span>
+
+ 
+   </span>
         </form>
     </div>
   
@@ -76,7 +83,7 @@ include('config/db.php');
 
 
 if(isset($_POST['submit'])){
-    echo "hey";
+    // echo "hey";
     $_filename = $_FILES['uploadedimg']['name'];
     $tempname  = $_FILES['uploadedimg']['tmp_name'];
     $pname = $_POST['pname'];
@@ -90,10 +97,11 @@ if(isset($_POST['submit'])){
   
     $data = mysqli_query($conn,$query);
     if($data){
-        // echo "<script> alert`product added succesfull`;</script>";
-        // echo "<script> Viewproduct();</script>";
+        echo "<script> alert('Product added  sucessfull '); </script>";
+       
     }
-   
-    
+
+
 }
+// alert();
 ?>

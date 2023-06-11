@@ -12,10 +12,6 @@ if(isset($_POST['submit'])){
     $pdescription = $_POST['pdescription'];
     $price       = $_POST['price'];
 
-
-    echo $pname;
-    echo $pdescription;
-    echo $price;
     
     $query = "UPDATE product 
     set 
@@ -25,6 +21,10 @@ if(isset($_POST['submit'])){
     where product_id = $update_id ";
 
     $data = mysqli_query($conn,$query);
+    if($data){
+        echo "<script> alert(productupdated);</script>";
+   
+    }
 
 
 
@@ -90,11 +90,11 @@ mysqli_free_result($result);
 
 <div>
     <label for="">Product-Name</label>
-    <input type="text" id="" class="" name="pname" value="<?php echo $prod['product_id']; ;?>">
+    <input type="text" id="" class="" name="pname" value="<?php echo $prod['pname']; ;?>">
 </div>
 <div>
     <label for="">Description</label>
-    <input type="text" id="" class="" name="pdescription" value="<?php echo $prod['pname']; ?>">
+    <input type="text" id="" class="" name="pdescription" value="<?php echo $prod['pdescription']; ?>">
 </div>
 <div>
     <label for="">Price</label>
@@ -105,7 +105,7 @@ mysqli_free_result($result);
     <input type="file"  id="" class="" name="uploadedimg">
     <img src="<?php echo $prod['image']; ?>" style="width:200px; height:100px">
 </div>
-<input type="text" name="update_id" value="<?php echo $prod['product_id'];?>">
+<input type="hidden" name="update_id" value="<?php echo $prod['product_id'];?>">
 
 <input type="submit" class="submit" name="submit" value="update">
 

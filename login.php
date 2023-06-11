@@ -89,7 +89,7 @@ if (isset($_POST['submit']))
             <div class="menu">
                 <ul>
 
-                    <li class="nav-items"><a href="registerr.php">sign up</a></li>
+                    <li class="nav-items"><a href="register.php">sign up</a></li>
                 </ul>
 
             </div>

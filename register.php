@@ -20,7 +20,7 @@
 
             <div class="menu">
                 <ul>
-                    <li class="nav-items"><a href="#">Home</a></li>
+                    <li class="nav-items"><a href="Website.php">Home</a></li>
 
                     <li class="nav-items dropdown">
                         <a href="#">About us </a>
@@ -140,7 +140,8 @@ if(isset($_POST["submit"])){
     if($data){
         // echo "<script> alert`product added succesfull`;</script>";
         echo "<script> alert('user registertion  sucessfull '); </script>";
-        header("Location:login.php");
+        
+        // header("Location:login.php");
     }
     else{
         echo "loginfailed";

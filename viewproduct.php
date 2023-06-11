@@ -97,11 +97,11 @@
 <?php 
 if(isset($_POST['delete_id'])){
     $delete_id = $_POST['delete_id'];
-    echo $delete_id;
+    // echo $delete_id;
     $query = "DELETE FROM product where product_id = {$delete_id}";
 
     if(mysqli_query($conn,$query)){
-        echo "<script> alert(deleted sucessfully ) ;</script>";
+        // echo "<script> alert('Product deleted sucessfull '); </script>";
     
     }
     else { 

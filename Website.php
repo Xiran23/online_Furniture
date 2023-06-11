@@ -14,7 +14,7 @@
   <nav>
     <!-- for left side of page navbar  -->
     <div class="logo">
-      <a href="#"> <img src="images/logos.png"  width="200px"> </a>
+      <a href="#"> <img src="images/logos.png" width="200px"> </a>
     </div>
 
     <!-- for middle side of page navbar  -->
@@ -24,6 +24,14 @@
         <li class="nav-items"><a href="#">Home</a></li>
 
         <li class="nav-items dropdown">
+          <a href="#"> Products </a>
+          <ul>
+            <li><a href="#">OUR TEMS</a></li>
+            <li><a href="#">OUR TEMS</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-items dropdown">
           <a href="#">About us </a>
           <ul>
             <li><a href="#">OUR TEMS</a></li>
@@ -31,25 +39,46 @@
           </ul>
         </li>
 
-        
 
-        <li class="nav-items"><a href="login.php">Sign in</a></li>
+
+
       </ul>
     </div>
 
     <!-- for right side of navbar  -->
+    <div class="right-side">
 
-    <div class="cart-search">
-      <a href="#"><img src="cart.png" alt="cart icon" /></a>
-      <span class="cart-count">0</span>
-      <input style="border: solid;" type="text" placeholder="Search" />
+      <div class="cart-search">
+        <input style="border: solid;" type="text" placeholder="Search" />
+      </div>
+
+      <div class="cart-icon">
+
+        <a href="#"><img src="cart.png" alt="cart icon" /></a>
+        <span class="cart-count">0</span>
+
+      </div>
+
+
+      <div class="menu">
+        <ul>
+          <li class="nav-items"><a href="register.php">sign up</a></li>
+          <li class="nav-items"><a href="login.php">login</a></li>
+
+        </ul>
+      </div>
+
+
+
+
+
     </div>
   </nav>
 
   <!-- auto slider -->
   <div>
 
-    
+
     <div style="
         width: 60%;
         background: #32353b;
@@ -60,45 +89,38 @@
         margin: auto;
         margin-top: 10px;
         " class="img_slider">
-    <!-- <img src="slider/leftt.png" alt="" class="ar1" style="transform: rotate(180deg);"> -->
-    <img src="images/photos1.jpg" style="width: 100%" alt="image not found" id="slider" />
-    <!-- <img src="slider/leftt.png" alt="" class="ar2" style="transform: rotate(180deg);"> -->
-  </div>
-  <div
-  style="text-align: center;">
-    
-    <h1> 
-  
-      RECOMMENDED FOR YOU
-    </h1>
-   <h5 >
-     Take a look at the newest additions to our modern furniture collection
-   </h5>
-  </div>
-  
+      <!-- <img src="slider/leftt.png" alt="" class="ar1" style="transform: rotate(180deg);"> -->
+      <img src="images/photos1.jpg" style="width: 100%" alt="image not found" id="slider" />
+      <!-- <img src="slider/leftt.png" alt="" class="ar2" style="transform: rotate(180deg);"> -->
+    </div>
+    <div style="text-align: center;">
 
-</div>
+      <h1>
+
+        RECOMMENDED FOR YOU
+      </h1>
+      <h5>
+        Take a look at the newest additions to our modern furniture collection
+      </h5>
+    </div>
+
+
+  </div>
 
   <!-- items list -->
 
-  <div style="
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: auto;
-        width: 90%;
-      ">
-<!-- ***************************************************************************************************************** -->
-    <div style="border: 1px solid #ccc; padding: 10px; width: 150px">
+  <div class="items-list">
+    <!-- ***************************************************************************************************************** -->
+    <div class="cart-items" >
       <!--  -->
       <a href="product-page.html">
-        <img src="images/img1.jpg" alt="Product Name" style="width: 100%" /></a>
-<!-- product name -->
+        <img src="images/img1.jpg" alt="Product Name"  /></a>
+      <!-- product name -->
       <h3 style="font-size: 18px; font-weight: bold">Chair</h3>
       <!-- product descripton -->
       <p style="font-size: 16px">Product Description</p>
       <!-- product prices -->
-      <p style="font-size: 16px; color: green; font-weight: bold">.99</p>
+      <p style="font-size: 16px; color: green; font-weight: bold">$19.99</p>
       <!-- add  to carts -->
       <a href="#" style="
             background-color: blue;
@@ -110,8 +132,122 @@
           ">Add to Cart</a>
     </div>
     <!-- ***************************************************************************************************************** -->
-    
-    
+
+     <!-- ***************************************************************************************************************** -->
+     <div class="cart-items" >
+      <!--  -->
+      <a href="product-page.html">
+        <img src="images/img1.jpg" alt="Product Name"  /></a>
+      <!-- product name -->
+      <h3 style="font-size: 18px; font-weight: bold">Chair</h3>
+      <!-- product descripton -->
+      <p style="font-size: 16px">Product Description</p>
+      <!-- product prices -->
+      <p style="font-size: 16px; color: green; font-weight: bold">$19.99</p>
+      <!-- add  to carts -->
+      <a href="#" style="
+            background-color: blue;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+          ">Add to Cart</a>
+    </div>
+    <!-- ***************************************************************************************************************** -->
+
+ <!-- ***************************************************************************************************************** -->
+ <div class="cart-items" >
+      <!--  -->
+      <a href="product-page.html">
+        <img src="images/img1.jpg" alt="Product Name"  /></a>
+      <!-- product name -->
+      <h3 style="font-size: 18px; font-weight: bold">Chair</h3>
+      <!-- product descripton -->
+      <p style="font-size: 16px">Product Description</p>
+      <!-- product prices -->
+      <p style="font-size: 16px; color: green; font-weight: bold">$19.99</p>
+      <!-- add  to carts -->
+      <a href="#" style="
+            background-color: blue;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+          ">Add to Cart</a>
+    </div>
+    <!-- ***************************************************************************************************************** -->
+
+ <!-- ***************************************************************************************************************** -->
+ <div class="cart-items" >
+      <!--  -->
+      <a href="product-page.html">
+        <img src="images/img1.jpg" alt="Product Name"  /></a>
+      <!-- product name -->
+      <h3 style="font-size: 18px; font-weight: bold">Chair</h3>
+      <!-- product descripton -->
+      <p style="font-size: 16px">Product Description</p>
+      <!-- product prices -->
+      <p style="font-size: 16px; color: green; font-weight: bold">$19.99</p>
+      <!-- add  to carts -->
+      <a href="#" style="
+            background-color: blue;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+          ">Add to Cart</a>
+    </div>
+    <!-- ***************************************************************************************************************** -->
+
+
+ <!-- ***************************************************************************************************************** -->
+ <div class="cart-items" >
+      <!--  -->
+      <a href="product-page.html">
+        <img src="images/img1.jpg" alt="Product Name"  /></a>
+      <!-- product name -->
+      <h3 style="font-size: 18px; font-weight: bold">Chair</h3>
+      <!-- product descripton -->
+      <p style="font-size: 16px">Product Description</p>
+      <!-- product prices -->
+      <p style="font-size: 16px; color: green; font-weight: bold">$19.99</p>
+      <!-- add  to carts -->
+      <a href="#" style="
+            background-color: blue;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+          ">Add to Cart</a>
+    </div>
+    <!-- ***************************************************************************************************************** -->
+<!-- ***************************************************************************************************************** -->
+<div class="cart-items" >
+      <!--  -->
+      <a href="product-page.html">
+        <img src="images/img1.jpg" alt="Product Name" /></a>
+      <!-- product name -->
+      <h3 style="font-size: 18px; font-weight: bold">Chair</h3>
+      <!-- product descripton -->
+      <p style="font-size: 16px">Product Description</p>
+      <!-- product prices -->
+      <p style="font-size: 16px; color: green; font-weight: bold">$19.99</p>
+      <!-- add  to carts -->
+      <a href="#" style="
+            background-color: blue;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+          ">Add to Cart</a>
+    </div>
+    <!-- ***************************************************************************************************************** -->
+
 
   </div>
 
@@ -125,7 +261,7 @@
   var j = 1;
   cart.forEach((i) => {
     var x = document.getElementById("count").innerHTML;
-    i.addEventListener("click", function () {
+    i.addEventListener("click", function() {
       document.getElementById("count").innerHTML = j;
       console.log(j);
       j++;
